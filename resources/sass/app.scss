@@ -1,1 +1,39 @@
-//
+@import "/partials/font";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+    color: rgb(24, 53, 67);
+    font-size: 2rem;
+}
+
+.container{
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    .card{
+        padding: 10px;
+        border: 5px solid wheat;
+        width: calc((100% - 15px - 15px)/3);
+
+        li{
+            margin: 20px;
+            color: rgb(0, 125, 188);
+            list-style: none;
+            h4{
+                color: rgb(16, 20, 24);
+                display: inline-block;
+                padding-right: 5px;
+            }
+        }
+    }
+}
